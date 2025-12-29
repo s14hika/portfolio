@@ -114,4 +114,4 @@ I'm open to:
 
 ---
 
-© 2024 Sadhika Shaik. All rights reserved.
+© 2025 Sadhika Shaik. All rights reserved.
