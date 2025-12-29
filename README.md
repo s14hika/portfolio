@@ -82,7 +82,7 @@ I'm a final-year BTech student in CSE (AI/ML) at **Lakireddy Bali Reddy College 
 - **GitHub**: [s14hika](https://github.com/s14hika)
 - **LinkedIn**: [Sadhika Shaik](https://www.linkedin.com/in/sadhika-shaik/)
 - **Upwork**: [Sadhika Profile](https://www.upwork.com/freelancers/~0103d958f3741d04f5)
-- **Email**: sadhika.shaik@example.com
+- **Email**: shaikbushrafathima1926@gmail.com
 
 ## 💬 What I Do
 
