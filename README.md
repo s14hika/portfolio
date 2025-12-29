@@ -110,7 +110,7 @@ I'm open to:
 
 **Location**: Vijayawada, Andhra Pradesh, India  
 **Languages**: English (Fluent), Hindi (Native), Telugu (Native)  
-**Portfolio Website**: Check out my interactive portfolio [here](./index.html)
+**Portfolio Website**: Check out my interactive portfolio [here](https://s14hika.github.io/portfolio/)
 
 ---
 
