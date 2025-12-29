@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sadhika Shaik - AI/ML & Web Developer Portfolio</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: #333;
+            line-height: 1.6;
+        }
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        header {
+            background: white;
+            padding: 40px 20px;
+            border-radius: 10px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+            margin-bottom: 40px;
+            text-align: center;
+        }
+        h1 {
+            color: #667eea;
+            font-size: 2.5em;
+            margin-bottom: 10px;
+        }
+        .subtitle {
+            color: #764ba2;
+            font-size: 1.2em;
+            margin-bottom: 15px;
+        }
+        .bio {
+            color: #555;
+            margin-bottom: 20px;
+            max-width: 800px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        .skills {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 10px;
+            margin-top: 20px;
+        }
+        .skill-tag {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 8px 16px;
+            border-radius: 20px;
+            font-size: 0.9em;
+            font-weight: 500;
+        }
+        .projects-section {
+            margin-bottom: 40px;
+        }
+        h2 {
+            color: white;
+            font-size: 2em;
+            margin-bottom: 30px;
+            text-align: center;
+        }
+        .projects-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 25px;
+        }
+        .project-card {
+            background: white;
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+        .project-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 15px 40px rgba(0,0,0,0.3);
+        }
+        .project-header {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 20px;
+        }
+        .project-title {
+            font-size: 1.5em;
+            margin-bottom: 5px;
+        }
+        .project-category {
+            font-size: 0.9em;
+            opacity: 0.9;
+        }
+        .project-body {
+            padding: 20px;
+        }
+        .project-description {
+            color: #555;
+            margin-bottom: 15px;
+            font-size: 0.95em;
+        }
+        .tech-stack {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 8px;
+            margin-bottom: 15px;
+        }
+        .tech-badge {
+            background: #f0f0f0;
+            color: #667eea;
+            padding: 4px 12px;
+            border-radius: 15px;
+            font-size: 0.85em;
+            font-weight: 500;
+        }
+        .project-link {
+            display: inline-block;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 10px 20px;
+            border-radius: 5px;
+            text-decoration: none;
+            font-weight: 500;
+            transition: opacity 0.3s ease;
+        }
+        .project-link:hover {
+            opacity: 0.9;
+        }
+        footer {
+            background: white;
+            padding: 30px 20px;
+            border-radius: 10px;
+            text-align: center;
+            margin-top: 40px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+        }
+        .social-links {
+            margin-top: 20px;
+        }
+        .social-links a {
+            display: inline-block;
+            margin: 0 10px;
+            color: #667eea;
+            text-decoration: none;
+            font-weight: 500;
+            transition: color 0.3s ease;
+        }
+        .social-links a:hover {
+            color: #764ba2;
+        }
+        @media (max-width: 768px) {
+            h1 { font-size: 1.8em; }
+            h2 { font-size: 1.5em; }
+            .projects-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Sadhika Shaik</h1>
+            <p class="subtitle">AI/ML Engineer | Full Stack Web Developer | Data Science Enthusiast</p>
+            <p class="bio">
+                Passionate Computer Science Engineer specializing in Machine Learning, AI, and Web Development. 
+                Currently pursuing B.Tech in CSE (AI&ML) at LBRCE. I create intelligent solutions combining 
+                technical precision with creative problem-solving.
+            </p>
+            <div class="skills">
+                <span class="skill-tag">Python</span>
+                <span class="skill-tag">TensorFlow</span>
+                <span class="skill-tag">React.js</span>
+                <span class="skill-tag">Node.js</span>
+                <span class="skill-tag">Machine Learning</span>
+                <span class="skill-tag">NLP</span>
+                <span class="skill-tag">Web Design</span>
+                <span class="skill-tag">Data Analysis</span>
+            </div>
+        </header>
+
+        <section class="projects-section">
+            <h2>Featured Projects</h2>
+            <div class="projects-grid">
+                <div class="project-card">
+                    <div class="project-header">
+                        <div class="project-title">Video Summarization System</div>
+                        <div class="project-category">NLP / Deep Learning</div>
+                    </div>
+                    <div class="project-body">
+                        <p class="project-description">
+                            An advanced video summarization system using CNN/DailyMail dataset and transformer models. 
+                            Extracts key information from video transcripts and generates concise summaries automatically.
+                        </p>
+                        <div class="tech-stack">
+                            <span class="tech-badge">Python</span>
+                            <span class="tech-badge">BERT</span>
+                            <span class="tech-badge">NLP</span>
+                            <span class="tech-badge">TensorFlow</span>
+                        </div>
+                        <a href="https://github.com/s14hika" class="project-link">View Code →</a>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <div class="project-header">
+                        <div class="project-title">Plant Disease Detection</div>
+                        <div class="project-category">Computer Vision / ML</div>
+                    </div>
+                    <div class="project-body">
+                        <p class="project-description">
+                            Deep learning model for identifying plant diseases from leaf images. Achieves high accuracy 
+                            in classifying various crop diseases, helping farmers with early detection and prevention.
+                        </p>
+                        <div class="tech-stack">
+                            <span class="tech-badge">CNN</span>
+                            <span class="tech-badge">OpenCV</span>
+                            <span class="tech-badge">Python</span>
+                            <span class="tech-badge">TensorFlow</span>
+                        </div>
+                        <a href="https://github.com/s14hika/PlantDiseaseDetection" class="project-link">View Code →</a>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <div class="project-header">
+                        <div class="project-title">Movie Recommendation System</div>
+                        <div class="project-category">Machine Learning</div>
+                    </div>
+                    <div class="project-body">
+                        <p class="project-description">
+                            Intelligent recommendation engine using collaborative filtering and content-based filtering. 
+                            Provides personalized movie suggestions based on user preferences and viewing history.
+                        </p>
+                        <div class="tech-stack">
+                            <span class="tech-badge">Scikit-learn</span>
+                            <span class="tech-badge">Python</span>
+                            <span class="tech-badge">Pandas</span>
+                            <span class="tech-badge">Numpy</span>
+                        </div>
+                        <a href="https://github.com/s14hika/Movie-Recommendation-System" class="project-link">View Code →</a>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <div class="project-header">
+                        <div class="project-title">House Price Prediction</div>
+                        <div class="project-category">Regression / ML</div>
+                    </div>
+                    <div class="project-body">
+                        <p class="project-description">
+                            Machine learning model for predicting house prices based on various features. Uses regression 
+                            algorithms to provide accurate price estimates for real estate properties.
+                        </p>
+                        <div class="tech-stack">
+                            <span class="tech-badge">Python</span>
+                            <span class="tech-badge">Scikit-learn</span>
+                            <span class="tech-badge">Linear Regression</span>
+                            <span class="tech-badge">Data Analysis</span>
+                        </div>
+                        <a href="https://github.com/s14hika/house_price_predictor" class="project-link">View Code →</a>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <div class="project-header">
+                        <div class="project-title">Employee Burnout Prediction</div>
+                        <div class="project-category">Classification / HR Analytics</div>
+                    </div>
+                    <div class="project-body">
+                        <p class="project-description">
+                            Predictive model to identify employees at risk of burnout using HR data. Helps organizations 
+                            take proactive measures to improve employee wellness and retention.
+                        </p>
+                        <div class="tech-stack">
+                            <span class="tech-badge">Python</span>
+                            <span class="tech-badge">Scikit-learn</span>
+                            <span class="tech-badge">Classification</span>
+                            <span class="tech-badge">EDA</span>
+                        </div>
+                        <a href="https://github.com/s14hika/EMPLOYEE-BURNOUT-PREDICTION" class="project-link">View Code →</a>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <div class="project-header">
+                        <div class="project-title">Vegetable Price Prediction</div>
+                        <div class="project-category">Time Series / Regression</div>
+                    </div>
+                    <div class="project-body">
+                        <p class="project-description">
+                            Forecasting model for predicting vegetable prices based on historical market data. 
+                            Assists farmers and traders in planning and decision-making.
+                        </p>
+                        <div class="tech-stack">
+                            <span class="tech-badge">Python</span>
+                            <span class="tech-badge">Time Series</span>
+                            <span class="tech-badge">Pandas</span>
+                            <span class="tech-badge">Scikit-learn</span>
+                        </div>
+                        <a href="https://github.com/s14hika/vegetable_price_prediction" class="project-link">View Code →</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <footer>
+            <h3>Let's Connect!</h3>
+            <p>I'm open to collaborations, freelance projects, and new opportunities in AI/ML and Web Development.</p>
+            <div class="social-links">
+                <a href="https://github.com/s14hika" target="_blank">GitHub</a>
+                <a href="https://www.linkedin.com/in/sadhika-shaik/" target="_blank">LinkedIn</a>
+                <a href="https://www.upwork.com/freelancers/~0103d958f3741d04f5" target="_blank">Upwork</a>
+                <a href="mailto:your-email@example.com">Email</a>
+            </div>
+            <p style="margin-top: 20px; color: #999; font-size: 0.9em;">
+                © 2024 Sadhika Shaik. All rights reserved.
+            </p>
+        </footer>
+    </div>
+</body>
+</html>
